@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="styles.css">
+       <title> Build a Tribute PagePassed </title>
+       <link rel = "icon" href = 
+       "https://www.birzeit.edu/sites/default/files/bzu-favicon.png"  
+               type = "image/x-icon">
+     </head>
+    
+<body>
+    <div class="main">
+    <h1 id="title"> Birzeit Universtiy Survey Form </h1>
+    <p id="description">
+    Thank you for taking time to help us improve our university
+    </p>
+
+    <div class="main-content">
+    <div class="form-content">  
+    <form id="survey-form">
+   
+    <label for="name" id="name-label"> Name </label>
+    <input id="name" type="text" name="name" placeholder="Enter your name" class="form-inputs" required> 
+       
+    <label for="email" id="email-label"> Email </label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" class="form-inputs" required>
+
+     <label for="number" id="number-label"> Rate BZU from 1 to 10 </label>
+     <input id="number" type="number" name="number" min="1" max="10" placeholder="Enter your rate" class="form-inputs" required> 
+
+<!--- *******************  select ************************************-->
+    <label for="dropdown" id="model" style="width: 90vw;">Which option best describes your current role?</label>
+     <select id="dropdown">
+        <option value = "student"> Student</option>
+         <option value = "full-time-learner"> Full time learner</option>
+        <option value = "full-time-job"> Full time job</option>
+        <option value = "prefer-not-to-say"> Prefer not to say</option>
+        <option value = "other"> Other </option>
+     </select>
+ <!--- *******************  end of select ************************************-->   
+
+ <fieldset> 
+    <!--- *******************  radio  ************************************-->
+     <legend>Would you recommend Birzeit University to the people you know? </legend>
+  <input id="definitely" type="radio"  name="recommend" checked value="definitely" >
+  <label for="definitely">Definitely</label><br>
+
+  <input id="maybe " type="radio" name="recommend" value="maybe">
+  <label for="maybe ">Maybe</label><br>
+
+  <input id="not-sure" type="radio" name="recommend" value="nnot-sure">
+  <label for="not-sure"> Not Sure</label><br><br>
+
+ </fieldset>
+  <!--- ******************* end of  radio  ************************************--> 
+  
+   <p>What would you like to see improved in BZU?</p>
+ <!--- *******************  checkbox  ************************************-->
+  <input type="checkbox" id="add-more-specialization" name="video-length" value="add-more-specialization">
+  <label for="add-more-specialization">Add more specialization</label><br>
+
+  <input type="checkbox" id="reduce-the-fees" name="reduce-the-fees" value="reduce-the-fees">
+  <label for="reduce-the-fees">Reduce the fees</label><br>
+
+  <input type="checkbox" id="reducing-cafeterias-prices" name="more-videos" value="reducing-cafeterias-prices">
+  <label for="reducing-cafeterias-prices">Reducing cafeterias prices</label><br>
+ <!--- ******************* end of checkbox  ************************************-->
+
+
+<label for="comment">Any comments or suggestions?</label>
+<textarea rows="4" cols="40" id="comment">Enter your comment here...</textarea>
+
+<button type="submit" id="submit">Submit</button>
+  
+        </form>
+
+            </div>
+        </div>
+    </div> 
+
+</body>
+
+</html>
